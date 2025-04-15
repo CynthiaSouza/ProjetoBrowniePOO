@@ -334,7 +334,7 @@ class MenuBrownies {
         panel.add(saborField);
 
         JOptionPane optionPane = new JOptionPane(panel, JOptionPane.PLAIN_MESSAGE, JOptionPane.OK_CANCEL_OPTION, icon);
-        JDialog dialog = optionPane.createDialog(frame, "Existe Brownie com Sabor");
+        JDialog dialog = optionPane.createDialog(frame, "Existe Browni com Sabor");
         dialog.setVisible(true);
 
         int result = (Integer) optionPane.getValue();

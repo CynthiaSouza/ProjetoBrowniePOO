@@ -5,7 +5,6 @@ import SistemaBrownie.Exceptions.ComboJaExisteException;
 import SistemaBrownie.Exceptions.ComboNaoExisteException;
 import SistemaBrownie.Exceptions.BrownieJaExisteException;
 import SistemaBrownie.Interface.SistemaVendas;
-import Modelo.*;
 import SistemaBrownie.Modelo.Brownie;
 import SistemaBrownie.Modelo.Combos;
 import SistemaBrownie.Modelo.TipoBrownie;
