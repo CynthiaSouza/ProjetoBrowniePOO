@@ -230,7 +230,7 @@ class MenuBrownies {
     private void contaItemAction(ActionEvent e) {
         ImageIcon icon = new ImageIcon("");
         String[] tipos = {"CLÁSSICO", "RECHEADO", "GOURMET", "TEMÁTICO", "ALCOÓLICO"};
-        String tipoStr = (String) JOptionPane.showInputDialog(frame, "Escolha o tipo do cupcake:", "Contar Cupcake do Tipo",
+        String tipoStr = (String) JOptionPane.showInputDialog(frame, "Escolha o tipo do brownie:", "Contar brownie do Tipo",
                 JOptionPane.QUESTION_MESSAGE, icon, tipos, tipos[0]);
         JOptionPane.showMessageDialog(frame, sistema.contaBrownieDoTipo(TipoBrownie.valueOf(tipoStr)), "Resultado da Contagem", JOptionPane.INFORMATION_MESSAGE, icon);
     }
@@ -251,7 +251,7 @@ class MenuBrownies {
         ImageIcon icon = new ImageIcon("");
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
-        panel.add(new JLabel("Digite o sabor para remover:"));
+        panel.add(new JLabel("Digite o sabor para remover: "));
 
         JTextField saborField = new JTextField(10);
         saborField.setPreferredSize(new Dimension(200, 20));
@@ -270,7 +270,7 @@ class MenuBrownies {
             String sabor = saborField.getText();
             try {
                 sistema.removeSabor(sabor);
-                JOptionPane.showMessageDialog(frame, "Cupcake removido com sucesso!", "Sucesso", JOptionPane.INFORMATION_MESSAGE, icon);
+                JOptionPane.showMessageDialog(frame, "Brownie removido com sucesso!", "Sucesso", JOptionPane.INFORMATION_MESSAGE, icon);
             } catch (BrownieNaoExisteException ex) {
                 JOptionPane.showMessageDialog(frame, "Erro: Sabor não encontrado!", "Erro", JOptionPane.ERROR_MESSAGE, icon);
             }
@@ -307,7 +307,7 @@ class MenuBrownies {
         JMenuItem source = (JMenuItem) e.getSource();
         switch (source.getText()) {
             case "Existe brownie do tipo":
-                existeCupcakeDoTipo();
+                existeBrownieDoTipo();
                 break;
             case "Existe brownie com sabor":
                 existeBrownieComSabor();
@@ -315,7 +315,7 @@ class MenuBrownies {
         }
     }
 
-    private void existeCupcakeDoTipo() {
+    private void existeBrownieDoTipo() {
         ImageIcon icon = new ImageIcon("");;
         String[] tipos = {"CLÁSSICO", "RECHEADO", "GOURMET", "TEMÁTICO", "ALCOÓLICO"};
         String tipoStr = (String) JOptionPane.showInputDialog(frame, "Escolha o tipo do brownie:", "Existe brownie do Tipo",
@@ -334,7 +334,7 @@ class MenuBrownies {
         panel.add(saborField);
 
         JOptionPane optionPane = new JOptionPane(panel, JOptionPane.PLAIN_MESSAGE, JOptionPane.OK_CANCEL_OPTION, icon);
-        JDialog dialog = optionPane.createDialog(frame, "Existe Browni com Sabor");
+        JDialog dialog = optionPane.createDialog(frame, "Existe Brownie com Sabor");
         dialog.setVisible(true);
 
         int result = (Integer) optionPane.getValue();
