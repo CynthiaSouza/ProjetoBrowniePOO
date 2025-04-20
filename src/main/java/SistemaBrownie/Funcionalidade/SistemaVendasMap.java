@@ -43,7 +43,7 @@ public class SistemaVendasMap implements SistemaVendas {
     }
 
     @Override
-    public void cadastarBrownie(String sabor, double preco, TipoBrownie tipo) throws BrownieJaExisteException {
+    public void cadastrarBrownie(String sabor, double preco, TipoBrownie tipo) throws BrownieJaExisteException {
         if (this.brownies.containsKey(sabor)) {
             throw new BrownieJaExisteException("Já existe este brownie cadastrado");
         } else {
