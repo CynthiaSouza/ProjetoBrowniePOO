@@ -1,7 +1,8 @@
+
 package SistemaBrownie.Exceptions;
 
 public class BrownieNaoExisteException extends Exception {
-    public BrownieNaoExisteException(String nãoFoiEncontradoEsteBrownie) {
-
+    public BrownieNaoExisteException(String mensagem) {
+        super(mensagem);
     }
 }

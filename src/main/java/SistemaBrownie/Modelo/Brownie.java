@@ -30,7 +30,7 @@ public class Brownie implements Serializable {
     }
 
     public String toString(){
-        return "Cupecake(" + "sabor=" + sabor + ", preco=" + preco + ", tipo" + tipo + ')';
+        return "Brownie(" + "sabor=" + sabor + ", preco=" + preco + ", tipo" + tipo + ')';
     }
 
     public String getSabor(){

@@ -14,7 +14,7 @@ public interface SistemaVendas {
 
     List<Combos> pesquisaCombos(String combo);
 
-    void cadastarBrownie(String sabor, double preco, TipoBrownie tipo) throws BrownieJaExisteException;
+    void cadastrarBrownie(String sabor, double preco, TipoBrownie tipo) throws BrownieJaExisteException;
 
     void cadastraCombos(String nome, double preco) throws ComboJaExisteException;
 

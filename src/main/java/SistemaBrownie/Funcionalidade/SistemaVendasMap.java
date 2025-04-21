@@ -1,3 +1,4 @@
+
 package SistemaBrownie.Funcionalidade;
 
 import SistemaBrownie.Exceptions.BrownieNaoExisteException;
@@ -72,7 +73,6 @@ public class SistemaVendasMap implements SistemaVendas {
         }
     }
 
-    //Usando streams
     @Override
     public List<Brownie> pesquisaBrowniePorSabor(String sabor) {
         return this.brownies.values().stream()
@@ -80,13 +80,11 @@ public class SistemaVendasMap implements SistemaVendas {
                 .collect(Collectors.toList());
     }
 
-
     @Override
     public boolean existeSabor(String sabor) {
         return this.brownies.containsKey(sabor);
     }
 
-    //Usando streams
     @Override
     public int contaBrownieDoTipo(TipoBrownie tipo) {
         return (int) this.brownies.values().stream()
@@ -103,12 +101,13 @@ public class SistemaVendasMap implements SistemaVendas {
             } catch (IOException e) {
                 System.err.println(e.getMessage());
             }
-            System.out.println("Sabor pistache removido com sucesso!");
+            System.out.println("Sabor " + sabor + " removido com sucesso!");
         } else {
-            throw new BrownieNaoExisteException("Não foi encontrado este sabor  de pistache");
+            throw new BrownieNaoExisteException("Não foi encontrado o sabor: " + sabor);
         }
     }
 
+    @Override
     public void removeCombo(String nome) throws ComboNaoExisteException {
         if (this.combos.containsKey(nome)) {
             this.combos.remove(nome);
@@ -123,7 +122,6 @@ public class SistemaVendasMap implements SistemaVendas {
         }
     }
 
-    //Usando streams
     @Override
     public List<Brownie> pesquisaValoresPorFaixa(double valorMinimo, double valorMaximo) {
         return this.brownies.values().stream()
