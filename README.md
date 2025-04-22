@@ -4,19 +4,19 @@
 
 ## 💻 Funcionalidades do Sistema
 
-### Brownies 🧁
+ ### Brownies 🧁
 - Cadastro de novos sabores
 - Pesquisa por sabor ou faixa de preço
 - Verificação por tipo ou sabor
 - Contagem por tipo
 - Remoção de brownies
 
-### Combos 🍭
+ ### Combos 🍭
 - Cadastro de combos promocionais
 - Busca por nome do combo
 - Remoção de combos
 
-### Outras características
+ ### Outras características
 - Interface amigável com menus
 - Persistência de dados com arquivos `.dat`
 - Exibição de imagem no menu principal
