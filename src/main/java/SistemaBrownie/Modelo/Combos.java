@@ -9,10 +9,6 @@ public class Combos implements Serializable {
     private List<Brownie> sabor;
     private double preco;
 
-    public Combos(String nome, double preco){
-        this.nome = nome;
-        this.preco = preco;
-    }
     public Combos(String nome, List<Brownie> sabor, double preco){
         this.nome = nome;
         this.sabor = sabor;
