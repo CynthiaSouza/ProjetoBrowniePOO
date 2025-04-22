@@ -3,8 +3,6 @@ package SistemaBrownie.Funcionalidade;
 
 import SistemaBrownie.Exceptions.BrownieJaExisteException;
 import SistemaBrownie.Exceptions.BrownieNaoExisteException;
-import SistemaBrownie.Exceptions.ComboJaExisteException;
-import SistemaBrownie.Exceptions.ComboNaoExisteException;
 import SistemaBrownie.Interface.SistemaVendas;
 import SistemaBrownie.Modelo.Brownie;
 import SistemaBrownie.Modelo.TipoBrownie;
