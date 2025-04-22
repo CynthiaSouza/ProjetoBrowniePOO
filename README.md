@@ -23,10 +23,9 @@
 
 ---
 
-## 🚧 Estrutura do Projeto
+## 🗂️ Estrutura do Projeto
 
-SistemaBrownie/ ├── Exceptions/ │   ├── BrownieJaExisteException.java │   ├── BrownieNaoExisteException.java │   ├── ComboJaExisteException.java │   └── ComboNaoExisteException.java ├── Funcionalidade/ │   ├── MenuBrownies.java │   ├── SistemaVendasMap.java │   └── GravadorDeDados.java ├── Interface/ │   └── SistemaVendas.java ├── Modelo/ │   ├── Brownie.java │   ├── Combos.java │   └── TipoBrownie.java ├── brownie.jpg
-
+SistemaBrownie/ ├── Exceptions/ │   ├── BrownieJaExisteException.java │   ├── BrownieNaoExisteException.java │   ├── ComboJaExisteException.java │   └── ComboNaoExisteException.java ├── Funcionalidade/ │   ├── MenuBrownies.java │   ├── SistemaVendasMap.java │   ├── GravadorDeDados.java ├── Interface/ │   └── SistemaVendas.java ├── Modelo/ │   ├── Brownie.java │   ├── Combos.java │   └── TipoBrownie.java └── brownie.jpg
 
 
 ---
